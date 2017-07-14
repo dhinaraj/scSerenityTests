@@ -23,17 +23,17 @@ public class UpgradePageNavigation {
 		 upgradePage.clickOnPlanUpgrade();
 		 upgradePage.clickOnPlanUpgrade2();
 		  
-		  if (currentPack.equalsIgnoreCase("Entreprenuer") && upgradePack.equalsIgnoreCase("Professional+") )
+		  if (currentPack.equalsIgnoreCase("BA Starter") && upgradePack.equalsIgnoreCase("BA Professional") )
 		  {
 			  upgradePage.selectPlan1();
 		  }
 		  
-		  if (currentPack.equalsIgnoreCase("Entreprenuer") && upgradePack.equalsIgnoreCase("Enterprise+") )
+		  if (currentPack.equalsIgnoreCase("BA Starter") && upgradePack.equalsIgnoreCase("BA Regional") )
 		  {
 			  upgradePage.selectPlan2();
 		  }
 		  
-		  if (currentPack.equalsIgnoreCase("Entreprenuer") && upgradePack.equalsIgnoreCase("Alliance") )
+		  if (currentPack.equalsIgnoreCase("BA Starter") && upgradePack.equalsIgnoreCase("BA Global") )
 		  {
 			  upgradePage.selectPlan3();
 		  }
@@ -53,17 +53,17 @@ public class UpgradePageNavigation {
 			  upgradePage.selectPlan3();
 		  }
 		  
-		  if (currentPack.equalsIgnoreCase("Professional") && upgradePack.equalsIgnoreCase("Enterprise+") )
+		  if (currentPack.equalsIgnoreCase("BA Professional") && upgradePack.equalsIgnoreCase("BA Regional") )
 		  {
 			  upgradePage.selectPlan1();
 		  }
 		  
-		  if (currentPack.equalsIgnoreCase("Professional") && upgradePack.equalsIgnoreCase("Alliance") )
+		  if (currentPack.equalsIgnoreCase("BA Professional") && upgradePack.equalsIgnoreCase("BA Global") )
 		  {
 			  upgradePage.selectPlan2();
 		  }
 		  
-		  if (currentPack.equalsIgnoreCase("Enterprise") && upgradePack.equalsIgnoreCase("Alliance") )
+		  if (currentPack.equalsIgnoreCase("BA Regional") && upgradePack.equalsIgnoreCase("BA Global") )
 		  {
 			  upgradePage.selectPlan1();
 		  }
@@ -165,7 +165,7 @@ public class UpgradePageNavigation {
 		    public void enterPurchaseDetails(String secondaryPassword, String voucherPresent, String oldPack) {
 			  
 			  String topupCreditAmount;
-			  if (voucherPresent.equalsIgnoreCase("Y") || oldPack.equalsIgnoreCase("Enterprise") )
+			  if (voucherPresent.equalsIgnoreCase("Y") || oldPack.equalsIgnoreCase("BA Regional") )
 			  {
 			  topupCreditAmount= upgradePage.readAmountToPay2();
 			  }

@@ -52,47 +52,52 @@ public class SponsorBonus_Purchase {
             	
             	//Purchase///
             	/*//{"UserID","Referrer","Placement","PacktoBuy","RegistrationOtp","PurcahseOtp", voucherApplied},*/
-            	//{"7555500001","777700039","777700039","Entreprenuer","480659","480659","N"},
-            	/*{"7555500002","777700039","777700039","Entreprenuer","079669","336847","N"},
-            	{"8555500002","777700039","777700039", "Basic","875879","624052","N"},		
-            	{"9555500002","777700039","777700039","Professional","234671","879846","N"},
-            	{"10555500002","777700039","777700039","Enterprise","789474","251748","N"},
-            	{"11555500002","777700039","777700039","Alliance","701116","340818","N"},	*/	
             	
-            	{"133300044","133300031","133300043","Entreprenuer+","069542","069542","Y"},
-            	{"133300045","133300031","133300044","Professional+","827981","827981","Y"},
-            	{"133300046","133300031","133300045","Enterprise+","551358","551358","NO"},
-            	{"133300047","133300031","133300046","Alliance","448348","448348","NO"},
-            	{"133300061","133300048","133300060","Entreprenuer+","542239","542239","Y"},
-            	{"133300062","133300048","133300061","Professional+","112551","112551","Y"},
-            	{"133300063","133300048","133300062","Enterprise+","986855","986855","NO"},
-            	{"133300064","133300048","133300063","Alliance","418638","418638","NO"},
-            	{"133300079","133300065","133300078","Professional+","473209","473209","Y"},
-            	{"133300080","133300065","133300079","Enterprise+","333253","333253","NO"},
-            	{"133300081","133300065","133300080","Alliance","528133","528133","NO"},
-            	{"133300095","133300082","133300094","Entreprenuer+","746728","746728","Y"},
-            	{"133300096","133300082","133300095","Professional+","675600","675600","Y"},
-            	{"133300097","133300082","133300096","Enterprise+","108688","108688","NO"},
-            	{"133300098","133300082","133300097","Alliance","273992","273992","NO"},
-            	{"133300112","133300099","133300111","Entreprenuer+","225671","225671","Y"},
-            	{"133300113","133300099","133300112","Professional+","911073","911073","Y"},
-            	{"133300114","133300099","133300113","Enterprise+","716224","716224","NO"},
-            	{"133300115","133300099","133300114","Alliance","587179","587179","NO"},
-            	{"133300129","133300116","133300128","Entreprenuer+","772281","772281","Y"},
-            	{"133300130","133300116","133300129","Professional+","412982","412982","Y"},
-            	{"133300131","133300116","133300130","Enterprise+","004568","004568","NO"},
-            	{"133300132","133300116","133300131","Alliance","342601","342601","NO"},
-            	{"133300146","133300133","133300145","Entreprenuer+","860043","860043","Y"},
-            	{"133300147","133300133","133300146","Professional+","595410","595410","Y"},
-            	{"133300148","133300133","133300147","Enterprise+","186146","186146","NO"},
-            	{"133300149","133300133","133300148","Alliance","191171","191171","NO"},
-            	
-            	
-  
+            	/*{"1234500082","1234500081","1234500081","BA Starter","264376","264376","NO"},
+            	{"1234500083","1234500081","1234500082","BA Starter","549822","549822","NO"},*/
+            	/*{"1234500084","1234500081","1234500083","BA Starter","341039","341039","NO"},
+            	{"1234500085","1234500081","1234500084","BA Professional","454543","454543","NO"},
+            	{"1234500086","1234500081","1234500085","BA Professional","166806","166806","NO"},
+            	{"1234500087","1234500081","1234500086","BA Regional","422859","422859","NO"},
+            	{"1234500088","1234500081","1234500087","BA Starter","504596","504596","NO"},
+            	{"1234500089","1234500081","1234500088","BA Professional","787719","787719","NO"},
+            	{"1234500090","1234500081","1234500089","BA Regional","464919","464919","NO"},
+            	{"1234500091","1234500081","1234500090","BA Global","235816","235816","NO"},
+            	{"1234500093","1234500092","1234500092","BA Starter","568744","568744","NO"},
+            	{"1234500094","1234500092","1234500093","BA Starter","795144","795144","NO"},
+            	{"1234500095","1234500092","1234500094","BA Starter","813594","813594","NO"},
+            	{"1234500096","1234500092","1234500095","BA Professional","540032","540032","NO"},
+            	{"1234500097","1234500092","1234500096","BA Professional","955437","955437","NO"},
+            	{"1234500098","1234500092","1234500097","BA Regional","083968","083968","NO"},
+            	{"1234500099","1234500092","1234500098","BA Starter","447962","447962","NO"},
+            	{"1234500100","1234500092","1234500099","BA Professional","443703","443703","NO"},
+            	{"1234500101","1234500092","1234500100","BA Regional","257350","257350","NO"},
+            	{"1234500102","1234500092","1234500101","BA Global","556009","556009","NO"},*/
+            	/*{"1234500104","1234500103","1234500103","BA Starter","718105","718105","NO"},
+            	{"1234500105","1234500103","1234500104","BA Starter","959745","959745","NO"},
+            	{"1234500106","1234500103","1234500105","BA Starter","990371","990371","NO"},
+            	{"1234500107","1234500103","1234500106","BA Professional","696432","696432","NO"},
+            	{"1234500108","1234500103","1234500107","BA Professional","588188","588188","NO"},
+            	{"1234500109","1234500103","1234500108","BA Regional","169980","169980","NO"},
+            	{"1234500110","1234500103","1234500109","BA Starter","575450","575450","NO"},*/
+            	{"1234500111","1234500103","1234500110","BA Professional","040178","040178","NO"},
+            	{"1234500112","1234500103","1234500111","BA Regional","238981","238981","NO"},
+            	{"1234500113","1234500103","1234500112","BA Global","239048","239048","NO"},
+            	{"1234500115","1234500114","1234500114","BA Starter","955953","955953","NO"},
+            	{"1234500116","1234500114","1234500115","BA Starter","901556","901556","NO"},
+            	{"1234500117","1234500114","1234500116","BA Starter","661778","661778","NO"},
+            	{"1234500118","1234500114","1234500117","BA Professional","502390","502390","NO"},
+            	{"1234500119","1234500114","1234500118","BA Professional","424328","424328","NO"},
+            	{"1234500120","1234500114","1234500119","BA Regional","224710","224710","NO"},
+            	{"1234500121","1234500114","1234500120","BA Starter","110366","110366","NO"},
+            	{"1234500122","1234500114","1234500121","BA Professional","033100","033100","NO"},
+            	{"1234500123","1234500114","1234500122","BA Regional","951291","951291","NO"},
+            	{"1234500124","1234500114","1234500123","BA Global","333776","333776","NO"},
+
             });
         }
         
-        private final String adminUserName= "dhina4";
+        private final String adminUserName= "dhina1";
         private final String adminPassword= "casuarina1";
         private final String captcha = "12345";
         private final String meTalkId;
@@ -140,7 +145,7 @@ public class SponsorBonus_Purchase {
    
     
     
-	//@Test
+	@Test
 	// New User Registration
 	public void registerUser() throws InterruptedException {
 		adminHomePageNavigation.isAtLoginPage();
@@ -149,29 +154,32 @@ public class SponsorBonus_Purchase {
 		adminUserPageNavigation.adjustCredit();
 		adminUserPageNavigation.findUser(meTalkId);
 		adminUserPageNavigation.login();
-		registrationNavigation.completeRegistration(fullName, nickName, email, nationalId, state, city, address,
-			postalCode, secondaryPassword, secondaryPasswordConfirmation, registrationOtp);
-		/*subscriptionNavigation.selectFirstPackage(subscriptionPack);
+		/*registrationNavigation.completeRegistration(fullName, nickName, email, nationalId, state, city, address,
+			postalCode, secondaryPassword, secondaryPasswordConfirmation, registrationOtp);*/
+		subscriptionNavigation.selectFirstPackage(subscriptionPack);
 		subscriptionNavigation.enterPurchaseDetails(subscriptionPack, referrerId, placementID, secondaryPassword);
-		subscriptionNavigation.purchasePackage(purchaseOtp);*/
+		//Thread.sleep(2000);
+		subscriptionNavigation.purchasePackage(purchaseOtp);
+		
+		
 		Thread.sleep(5000);
 
 	}
 	
 	
-	@Test
+	//@Test
 	// New User Purchase
 	public void buyFirstPackage() throws InterruptedException {
 		adminHomePageNavigation.isAtLoginPage();
 		adminHomePageNavigation.login(adminUserName, adminPassword, captcha);
 		adminUserPageNavigation.findUser(meTalkId);
-		adminUserPageNavigation.adjustCredit();
-		adminUserPageNavigation.findUser(meTalkId);
+		/*adminUserPageNavigation.adjustCredit();
+		adminUserPageNavigation.findUser(meTalkId);*/
 		adminUserPageNavigation.login();
 		subscriptionNavigation.selectFirstPackage(subscriptionPack);
 		subscriptionNavigation.enterPurchaseDetailsOld(subscriptionPack, referrerId, placementID, secondaryPassword, voucherApplied);
 		subscriptionNavigation.purchasePackage(purchaseOtp);
-		Thread.sleep(10000);
+		Thread.sleep(5000);
 	}
 	
 

@@ -41,7 +41,13 @@ public class AdminUsersSearchPage extends PageObject {
     
     public void enterAdditionalTopUpCredit() { 
     	getDriver().findElement(By.name("me_points_adjustment")).clear();
-    	getDriver().findElement(By.name("me_points_adjustment")).sendKeys("100");
+    	getDriver().findElement(By.name("me_points_adjustment")).sendKeys("50000");
+    	
+    }
+    
+    public void enterAdditionalAdvCredit() { 
+    	getDriver().findElement(By.name("advertising_credit_adjustment")).clear();
+    	getDriver().findElement(By.name("advertising_credit_adjustment")).sendKeys("50000");
     	
     }
     

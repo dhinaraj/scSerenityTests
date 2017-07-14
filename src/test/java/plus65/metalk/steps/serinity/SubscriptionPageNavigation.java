@@ -20,62 +20,218 @@ public class SubscriptionPageNavigation {
 		  subscriptionPage.clickOnPlanSubscription();
 		  subscriptionPage.clickOnFristTimeSubscription();
 		  
-		  if (subscriptionPackage.equalsIgnoreCase("Entreprenuer+") )
+		  if (subscriptionPackage.equalsIgnoreCase("BA Starter") )
 		  {
-			  subscriptionPage.selectEntreprenuerPlusSecurePlan();
+			  subscriptionPage.selectPlan1();
 		  }
 		  
-		  if (subscriptionPackage.equalsIgnoreCase("Professional+") )
+		  if (subscriptionPackage.equalsIgnoreCase("BA Professional") )
 		  {
-			  subscriptionPage.selectProfessionalPlusPlan();
+			  subscriptionPage.selectPlan2();
 		  }
 		  
 		  
-		  if (subscriptionPackage.equalsIgnoreCase("Enterprise+") )
+		  if (subscriptionPackage.equalsIgnoreCase("BA Regional") )
 		  {
-			  subscriptionPage.selectEnterprisePlusPlan();
+			  subscriptionPage.selectPlan3();
+		  }
+		  
+		  if (subscriptionPackage.equalsIgnoreCase("BA Global") )
+		  {
+			  subscriptionPage.selectPlan4();;
+		  }
+	  }
+	  
+	  @Step
+	    public void selectFirstPackageOld(String subscriptionPackage) {
+		  subscriptionPage.clickOnSubscription();
+		  subscriptionPage.clickOnPlanSubscription();
+		  subscriptionPage.clickOnFristTimeSubscription();
+		  
+		  if (subscriptionPackage.equalsIgnoreCase("Entreprenuer") )
+		  {
+			  subscriptionPage.selectPlan1();
+		  }
+		  
+		  if (subscriptionPackage.equalsIgnoreCase("Basic") )
+		  {
+			  subscriptionPage.selectPlan2();
+		  }
+		  
+		  
+		  if (subscriptionPackage.equalsIgnoreCase("Professional") )
+		  {
+			  subscriptionPage.selectPlan3();
+		  }
+		  
+		  if (subscriptionPackage.equalsIgnoreCase("Enterprise") )
+		  {
+			  subscriptionPage.selectPlan4();;
 		  }
 		  
 		  if (subscriptionPackage.equalsIgnoreCase("Alliance") )
 		  {
-			  subscriptionPage.selectAlliancePlan();;
+			  subscriptionPage.selectPlan5();;
+		  }
+	  }
+	  
+	  
+	  @Step
+	    public void selectSecondPackAfterCLP(String subscriptionPackage) {
+		  subscriptionPage.clickOnSubscription();
+		  subscriptionPage.clickOnPlanSubscription();
+		  subscriptionPage.clickOnFristTimeSubscription();
+		  
+		  if (subscriptionPackage.equalsIgnoreCase("Entreprenuer") )
+		  {
+			  subscriptionPage.selectPlan1();
+		  }
+		  
+		  if (subscriptionPackage.equalsIgnoreCase("Basic") )
+		  {
+			  subscriptionPage.selectPlan1();
+		  }
+		  
+		  
+		  if (subscriptionPackage.equalsIgnoreCase("Professional") )
+		  {
+			  subscriptionPage.selectPlan1();
+		  }
+		  
+		  if (subscriptionPackage.equalsIgnoreCase("Enterprise") )
+		  {
+			  subscriptionPage.selectPlan1();;
+		  }
+		  
+		  if (subscriptionPackage.equalsIgnoreCase("Alliance") )
+		  {
+			  subscriptionPage.selectPlan1();;
 		  }
 	  }
 
 		  
 		  @Step
-		    public void enterPurchaseDetails(String subscriptionPackage,  String referrerId, String placementID, String secondaryPassword) {
+		    public void enterPurchaseDetails(String subscriptionPackage,  String referrerId, String placementID, String secondaryPassword) throws InterruptedException {
 			  
 			  String topupCreditAmount;
 			  
-			  if (subscriptionPackage.equals("Entreprenuer+"))
+			  if (subscriptionPackage.equalsIgnoreCase("BA Starter"))
 			  {
 				 topupCreditAmount = "3000";
 			  subscriptionPage.enterTopupCreditstoUse(topupCreditAmount);
 			  }
 			  
-			  if (subscriptionPackage.equals("Professional+"))
+			  if (subscriptionPackage.equalsIgnoreCase("BA Professional"))
 			  {
 				  topupCreditAmount = "9900";
 			  subscriptionPage.enterTopupCreditstoUse(topupCreditAmount);
 			  }
 			  
-			  if (subscriptionPackage.equals("Enterprise+"))
+			  if (subscriptionPackage.equalsIgnoreCase("BA Regional"))
 			  {
 				  topupCreditAmount = "16500";
 			  subscriptionPage.enterTopupCreditstoUse(topupCreditAmount);
 			  }
 			  
-			  if (subscriptionPackage.equals("Alliance"))
+			  if (subscriptionPackage.equalsIgnoreCase("BA Global"))
 			  {
 				  topupCreditAmount = "50000";
 			  subscriptionPage.enterTopupCreditstoUse(topupCreditAmount);
 			  }
 			  
+			  
 			  subscriptionPage.enterSponsor(referrerId);
+			  
 			  subscriptionPage.enterPlacement(placementID);
+			 
 			  subscriptionPage.enterSecondaryPassword(secondaryPassword);
+			  
 			  subscriptionPage.selectAgree();
+			  
+	    }
+		  
+		  
+		  @Step
+		    public void enterPurchaseDetailsOld(String subscriptionPackage,  String referrerId, String placementID, String secondaryPassword, String voucherApplied) throws InterruptedException {
+			  
+			  String topupCreditAmount;
+			  
+			  if (subscriptionPackage.equalsIgnoreCase("BA Starter"))
+			  {
+				  
+				  if (voucherApplied.equalsIgnoreCase("Y"))
+				  {
+				  topupCreditAmount= subscriptionPage.readAmountToPay();
+				  }
+				  else
+				  {
+				   topupCreditAmount = "3000";
+				  }
+				  
+			  subscriptionPage.enterTopupCreditstoUse(topupCreditAmount);
+			  }
+			  
+			  if (subscriptionPackage.equals("Basic"))
+			  {
+				  if (voucherApplied.equalsIgnoreCase("Y"))
+				  {
+				  topupCreditAmount= subscriptionPage.readAmountToPay();
+				  }
+				  else
+				  {
+				   topupCreditAmount = "3000";
+				  }
+			  subscriptionPage.enterTopupCreditstoUse(topupCreditAmount);
+			  }
+			  
+			  if (subscriptionPackage.equals("BA Professional"))
+			  {
+				  if (voucherApplied.equalsIgnoreCase("Y"))
+				  {
+				  topupCreditAmount= subscriptionPage.readAmountToPay();
+				  }
+				  else
+				  {
+				   topupCreditAmount = "9900";
+				  }
+			  subscriptionPage.enterTopupCreditstoUse(topupCreditAmount);
+			  }
+			  
+			  if (subscriptionPackage.equals("BA Regional"))
+			  {
+				  if (voucherApplied.equalsIgnoreCase("Y"))
+				  {
+				  topupCreditAmount= subscriptionPage.readAmountToPay();
+				  }
+				  else
+				  {
+				   topupCreditAmount = "16500";
+				  }
+			  subscriptionPage.enterTopupCreditstoUse(topupCreditAmount);
+			  }
+			  
+			  if (subscriptionPackage.equals("BA Global"))
+			  {
+				  if (voucherApplied.equalsIgnoreCase("Y"))
+				  {
+				  topupCreditAmount= subscriptionPage.readAmountToPay();
+				  }
+				  else
+				  {
+				   topupCreditAmount = "50000";
+				  }
+			  subscriptionPage.enterTopupCreditstoUse(topupCreditAmount);
+			  }
+			  
+			  Thread.sleep(2000);
+			  subscriptionPage.enterSponsor(referrerId);
+			  Thread.sleep(2000);
+			  subscriptionPage.enterPlacement(placementID);
+			  Thread.sleep(2000);
+			 subscriptionPage.enterSecondaryPassword(secondaryPassword);
+			 Thread.sleep(2000);
+			  subscriptionPage.selectAgree();
+			  Thread.sleep(2000);
 			  
 	    }
 		  

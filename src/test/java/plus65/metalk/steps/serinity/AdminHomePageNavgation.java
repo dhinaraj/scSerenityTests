@@ -18,10 +18,11 @@ public class AdminHomePageNavgation {
 
 	  
 	  @Step
-	    public void login(String meTalkId, String password, String captcha) {
+	    public void login(String meTalkId, String password, String captcha) throws InterruptedException  {
 		  adminHomePage.enterMeTalkId(meTalkId);
 		  adminHomePage.enterPassword(password);
-		  adminHomePage.enterCaptcha(captcha);
+		 // Thread.sleep(6000);
+		 adminHomePage.enterCaptcha(captcha);
 		  adminHomePage.clickOnLogin();
 	    }
 	  

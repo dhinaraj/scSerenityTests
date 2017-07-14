@@ -80,12 +80,18 @@
                 <artifactId>maven-failsafe-plugin</artifactId>
                 <version>2.18.1</version>
                 <configuration>
+               <!--  <parallel>suites</parallel>
+          		<threadCount>1</threadCount> -->
                     <includes>
-                        <include>**/*Test.java</include>
-                        <include>**/Test*.java</include>
-                        <include>**/When*.java</include>
-                        <include>**/*Story.java</include>
-                    </includes>
+						<!-- <include>**/*Test.java</include> <include>**/Test*.java</include> 
+							<include>**/When*.java</include> <include>**/*Story.java</include> <include>**/PartimerRegistrationStory.java</include> 
+						<include>**/TestJob.java</include>
+						<include>**/TestJob2.java</include>
+						<include>**/SponsorBonus_Purchase.java</include>
+						<include>**/SponsorBonus_Purchase2.java</include>-->
+						<include>**/SponsorBonus_Purchase3.java</include>
+						<include>**/SponsorBonus_Purchase4.java</include>
+					</includes>
                     <argLine>-Xmx512m</argLine>
                     <systemPropertyVariables>
                         <webdriver.driver>${webdriver.driver}</webdriver.driver>

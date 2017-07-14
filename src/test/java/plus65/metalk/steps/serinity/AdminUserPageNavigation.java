@@ -24,6 +24,7 @@ public class AdminUserPageNavigation {
 	    public void adjustCredit() {
 		  adminSearch.clickOnAdjustCreditButton();
 		  adminSearch.enterAdditionalTopUpCredit();
+		  adminSearch.enterAdditionalAdvCredit();
 		  adminSearch.enterRemarks();
 		  adminSearch.clickOnSaveCreditChanges();
 	    }
@@ -32,4 +33,6 @@ public class AdminUserPageNavigation {
 	    public void login() {
 		  adminSearch.clickOnLoginButton();
 	    }
+	  
+	  
 }
